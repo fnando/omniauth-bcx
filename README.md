@@ -24,7 +24,7 @@ Or install it yourself as:
 
 ## Usage
 
-`OmniAuth::Strategies::BCX` is simply a Rack middleware. Read the OmniAuth docs for detailed instructions: <https://github.com/intridea/omniauth>.
+`OmniAuth::Strategies::Basecamp` is simply a Rack middleware. Read the OmniAuth docs for detailed instructions: <https://github.com/intridea/omniauth>.
 
 First, create a new application at `https://launchpad.37signals.com/integrations`. Your callback URL must be something like `https://example.com/auth/basecamp/callback`. For development you can use `http://127.0.0.1:3000/auth/basecamp/callback`.
 
