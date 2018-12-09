@@ -25,7 +25,9 @@ module OmniAuth
       end
 
       info do
-        raw_info.fetch(:identity)
+        identity = raw_info.fetch(:identity).dup
+        identity[:email] = identity.delete(:email_address)
+        identity
       end
 
       extra do

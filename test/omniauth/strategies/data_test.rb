@@ -18,7 +18,7 @@ class DataTest < Minitest::Test
   end
 
   test "returns info" do
-    identity = {id: "ID", name: "NAME"}
+    identity = {id: "ID", name: "NAME", email_address: "EMAIL"}
     raw_info = {identity: identity}
     strategy.stubs(:raw_info).returns(raw_info)
 
@@ -26,6 +26,7 @@ class DataTest < Minitest::Test
 
     assert_equal "ID", info[:id]
     assert_equal "NAME", info[:name]
+    assert_equal "EMAIL", info[:email]
   end
 
   test "returns uid" do
