@@ -1,7 +1,7 @@
 # Omniauth::BCX
 
-[![Travis-CI](https://travis-ci.org/fnando/omniauth-bcx.png)](https://travis-ci.org/fnando/omniauth-bcx)
-[![CodeClimate](https://codeclimate.com/github/fnando/omniauth-bcx.png)](https://codeclimate.com/github/fnando/omniauth-bcx)
+[![Travis-CI](https://travis-ci.org/fnando/omniauth-bcx.svg)](https://travis-ci.org/fnando/omniauth-bcx)
+[![CodeClimate](https://codeclimate.com/github/fnando/omniauth-bcx.svg)](https://codeclimate.com/github/fnando/omniauth-bcx)
 [![Test Coverage](https://codeclimate.com/github/fnando/omniauth-bcx/badges/coverage.svg)](https://codeclimate.com/github/fnando/omniauth-bcx/coverage)
 [![Gem](https://img.shields.io/gem/v/omniauth-bcx.svg)](https://rubygems.org/gems/omniauth-bcx)
 [![Gem](https://img.shields.io/gem/dt/omniauth-bcx.svg)](https://rubygems.org/gems/omniauth-bcx)
@@ -32,8 +32,8 @@ Here's a quick example, adding the middleware to a Rails app in `config/initiali
 
 ```ruby
 Rails.application.config.middleware.use OmniAuth::Builder do
-  provider :basecamp, 
-            ENV['BASECAMP_CLIENT_ID'], 
+  provider :basecamp,
+            ENV['BASECAMP_CLIENT_ID'],
             ENV['BASECAMP_CLIENT_SECRET']
 end
 ```
