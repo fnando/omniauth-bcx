@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require "omniauth"
 require "omniauth-oauth2"
 
@@ -45,7 +47,9 @@ module OmniAuth
       end
 
       def raw_info
-        @raw_info ||= deep_symbolize(access_token.get("/authorization.json").parsed)
+        @raw_info ||= deep_symbolize(
+          access_token.get("/authorization.json").parsed
+        )
       end
 
       def callback_url

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require "test_helper"
 
 class DataTest < Minitest::Test
@@ -51,7 +53,8 @@ class DataTest < Minitest::Test
     assert_equal "code", strategy.authorize_params[:response_type]
     assert_equal "consumer_id", strategy.authorize_params[:client_id]
     assert_equal "web_server", strategy.authorize_params[:type]
-    assert_equal "/auth/basecamp/callback", strategy.authorize_params[:redirect_uri]
+    assert_equal "/auth/basecamp/callback",
+                 strategy.authorize_params[:redirect_uri]
   end
 
   test "returns token params" do

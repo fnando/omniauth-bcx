@@ -2,7 +2,6 @@
 
 [![Travis-CI](https://travis-ci.org/fnando/omniauth-bcx.svg)](https://travis-ci.org/fnando/omniauth-bcx)
 [![CodeClimate](https://codeclimate.com/github/fnando/omniauth-bcx.svg)](https://codeclimate.com/github/fnando/omniauth-bcx)
-[![Test Coverage](https://codeclimate.com/github/fnando/omniauth-bcx/badges/coverage.svg)](https://codeclimate.com/github/fnando/omniauth-bcx/coverage)
 [![Gem](https://img.shields.io/gem/v/omniauth-bcx.svg)](https://rubygems.org/gems/omniauth-bcx)
 [![Gem](https://img.shields.io/gem/dt/omniauth-bcx.svg)](https://rubygems.org/gems/omniauth-bcx)
 
@@ -24,11 +23,17 @@ Or install it yourself as:
 
 ## Usage
 
-`OmniAuth::Strategies::Basecamp` is simply a Rack middleware. Read the OmniAuth docs for detailed instructions: <https://github.com/intridea/omniauth>.
+`OmniAuth::Strategies::Basecamp` is simply a Rack middleware. Read the OmniAuth
+docs for detailed instructions: <https://github.com/intridea/omniauth>.
 
-First, create a new application at `https://launchpad.37signals.com/integrations`. Your callback URL must be something like `https://example.com/auth/basecamp/callback`. For development you can use `http://127.0.0.1:3000/auth/basecamp/callback`.
+First, create a new application at
+`https://launchpad.37signals.com/integrations`. Your callback URL must be
+something like `https://example.com/auth/basecamp/callback`. For development you
+can use `http://127.0.0.1:3000/auth/basecamp/callback`.
 
-Here's a quick example, adding the middleware to a Rails app in `config/initializers/omniauth.rb`. This example assumes you're exporting your credentials as environment variables.
+Here's a quick example, adding the middleware to a Rails app in
+`config/initializers/omniauth.rb`. This example assumes you're exporting your
+credentials as environment variables.
 
 ```ruby
 Rails.application.config.middleware.use OmniAuth::Builder do
